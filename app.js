@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
  res.send('<h1>Hello from Jenkins on AWS!</h1><p>Version 2.0</p>');
 });
 app.get('/health', (req, res) => {
- res.json({ status: 'DOWN' });
+ res.json({ status: 'UP' });
 });
 if (require.main === module) {
  app.listen(PORT, '0.0.0.0', () => {
