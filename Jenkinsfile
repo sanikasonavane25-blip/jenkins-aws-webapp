@@ -30,8 +30,6 @@ pipeline {
  
         stage('Install Dependencies') {
             steps {
-Page 12 of 20
-MCA | Jenkins CI/CD pipeline on AWS
                 sh 'node -v && npm -v'
                 sh 'npm install'
             }
@@ -88,8 +86,6 @@ MCA | Jenkins CI/CD pipeline on AWS
         }
         failure {
             echo 'FAILED: read the error in the failed stage above'
-Page 13 of 20
-MCA | Jenkins CI/CD pipeline on AWS
         }
     }
 }
